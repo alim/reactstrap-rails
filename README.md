@@ -35,3 +35,8 @@ updating of the javascript packages:
    ```
    <%= javascript_pack_tag 'hello_react' %>
    ```
+1. Update config/initializers/content_security_policy.rb to allow content from
+   webpack-dev-server.
+   ```
+   policy.connect_src :self, :https, 'http://localhost:3035', 'ws://localhost:3035' if Rails.env.development?
+   ```
