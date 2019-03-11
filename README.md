@@ -15,7 +15,7 @@ updating of the javascript packages:
 1. `yarn upgrade @rails/webpacker@^4.0`
 1. `yarn upgrade webpack-dev-server@^3.2`
 1. `yarn add reactstrap`
-1. `yarn add bootstrap@4`
+1. `yarn add bootstrap@^4.3.1`
 1. `yarn check` - should not yield any warnings
 
 # Initial Controller and View Setup
