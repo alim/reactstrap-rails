@@ -18,6 +18,10 @@ updating of the javascript packages:
 1. `yarn add bootstrap@^4.3.1`
 1. `yarn check` - should not yield any warnings
 
+After installation, you can run the `webpack-dev-server` in a separate terminal
+window. This server will automatically compile and javascript or JSX code in
+the `app/javascript` directory.
+
 # Initial Controller and View Setup
 
 1. Edit Gemfile to down grade Sqlite3 from 1.4.x since Rails doesn't support it yet.
@@ -42,8 +46,10 @@ updating of the javascript packages:
    ```
    policy.connect_src :self, :https, 'http://localhost:3035', 'ws://localhost:3035' if Rails.env.development?
    ```
-The above steps should get you a simple hello world example up and running. We
-will move on to something a little more complex in the next section.
+The above steps should get you a simple hello world example up and running.
+We will move on to something a little more complex in the next section. To
+see the simple hello-world example, run `bin/rails s` and point your browser
+to the traditional location 'http://localhost:3000'
 
 # Adding Bootstrap Components
 
