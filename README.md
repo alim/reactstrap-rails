@@ -5,12 +5,17 @@ using Webpacker, React.js and Reacstrap. It's based on Rails 5.2.2 running on
 Ruby 2.5.1. The master branch of the this repository represents the end state
 of all the tutorial steps documented in this README file.
 
+The application model behind this example has the following goals in mind:
+1. Enable us to use a modern Javascript frame work like React with Rails.
+1. Simplify the organization of assets to only use webpack/wepacker without the need for the asset pipeline
+1. Support simple ERB templates with React components handling all the view layer presentation and interactions
+
 # Setup
 
 To setup this application we did the following which includes installation and
 updating of the javascript packages:
 
-1. `rails new reactstrap-rails --webpack=react --skip-coffee --skip-javascript`
+1. `rails new reactstrap-rails --webpack=react --skip-coffee --skip-javascript --skip-sprockets`
 1. `cd reactstrap-rails`
 1. `yarn upgrade @rails/webpacker@^4.0`
 1. `yarn upgrade webpack-dev-server@^3.2`
