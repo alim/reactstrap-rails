@@ -64,14 +64,13 @@ modification are:
 
 1. Remove the old webpack entry point for application the
    `<%= javascript_pack_tag 'hello_react' %>` entry and replace it with our
-   new entry point and style sheet in the `<head>` section:
+   new entry point in the `<head>` section:
    ```
-   <%= stylesheet_link_tag 'application', media: 'all' %>
    <%= javascript_pack_tag 'application' %>
    ```
 1. Update the app/javascript/packs/application.js file to include the lines
    below. The console messages are just there for debugging to make sure
-   the entrypoint is being loaded:
+   the style-sheet is being loaded:
    ```
    console.log('Hello World from Webpacker')
    import 'bootstrap/dist/css/bootstrap.min.css'
